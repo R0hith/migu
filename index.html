@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forever our angel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sky" aria-hidden="true"><i class="cloud c1"></i><i class="cloud c2"></i><i class="cloud c3"></i></div>
+<div id="feathers" aria-hidden="true"></div>
+
+<div id="angel" aria-hidden="true">
+  <div class="bob">
+    <i class="halo"></i><i class="wing l"></i><i class="wing r"></i>
+    <img id="angel-img" alt="">
+  </div>
+</div>
+
+<section id="greeting" role="dialog" aria-live="polite" aria-label="A message from our angel">
+  <div class="greet-card">
+    <div class="greet-angel"><i class="halo"></i><i class="wing l"></i><i class="wing r"></i><img id="greet-img" alt=""></div>
+    <p id="greet-hello"></p>
+    <p id="greet-note"></p>
+    <button id="enter" type="button">Come in</button>
+  </div>
+</section>
+
+<header class="hero">
+  <div class="hero-angel"><i class="halo"></i><i class="wing l"></i><i class="wing r"></i><img id="hero-img" alt=""></div>
+  <h1 id="name"></h1>
+  <p id="tagline" class="tagline"></p>
+  <p id="dates" class="dates"></p>
+</header>
+
+<main>
+  <section class="story"><div id="story"></div></section>
+
+  <section class="block">
+    <h2>Her little moments</h2>
+    <div id="photos" class="masonry"></div>
+    <div id="drive-embeds"></div>
+    <p id="no-photos" class="empty" hidden>Add her photos to <code>media/photos</code> and run <code>python build.py</code>.</p>
+  </section>
+
+  <section class="block" id="videos-block">
+    <h2>Hear her laugh again</h2>
+    <div id="videos" class="videos"></div>
+  </section>
+
+  <section class="block quotes">
+    <h2>Words for the heart</h2>
+    <blockquote id="quote"></blockquote>
+    <button id="next-quote" type="button">Another one</button>
+  </section>
+</main>
+
+<footer>
+  <p id="foot"></p>
+</footer>
+
+<div id="lightbox" hidden><button id="lb-close" aria-label="Close">×</button><button id="lb-prev" aria-label="Previous">‹</button><img id="lb-img" alt=""><button id="lb-next" aria-label="Next">›</button></div>
+<script src="script.js"></script>
+</body>
+</html>
